@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyRailsApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application' %>
+    <script src="https://cdn.optimizely.com/datafiles/<SDK_KEY>.json/tag.js"></script>
+
+  </head>
+
+  <body>
+ 
+    <%= yield %>
+  </body>
+</html>
